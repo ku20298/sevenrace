@@ -1,22 +1,20 @@
 package main
 
 import (
-	"fmt"
-	"github.com/hajimehoshi/ebiten/inpututil"
-	"golang.org/x/image/colornames"
-	"image/png"
-	"bytes"
-
-	"time"
-	"math/rand"
-	"image/color"
-	"github.com/hajimehoshi/ebiten/ebitenutil"
-	
-	"github.com/hajimehoshi/ebiten/text"
-	
 	"github.com/hajimehoshi/ebiten"
-	"log"
+	"github.com/hajimehoshi/ebiten/inpututil"
+	"github.com/hajimehoshi/ebiten/ebitenutil"
+	"github.com/hajimehoshi/ebiten/text"
+	"golang.org/x/image/colornames"
 	"golang.org/x/image/font"
+	
+	"image/color"
+	"image/png"
+	"math/rand"
+	"fmt"
+	"bytes"
+	"time"
+	"log"
 	"strconv"
 )
 
