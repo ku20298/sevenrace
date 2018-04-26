@@ -188,7 +188,7 @@ func keyEvent() {
 
 			score = 0
 		}else if !isGameOver{
-			time.Sleep(time.Millisecond * 9)
+			time.Sleep(time.Millisecond * 10)
 			if ebiten.IsKeyPressed(ebiten.KeyLeft) {
 				racePlayer.positionX -= 0.5
 			}
