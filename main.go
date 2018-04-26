@@ -104,13 +104,13 @@ func createCourse() {
 
 			if count == 0 {
 				if i > 180 {
-					time.Sleep(time.Millisecond * 12)
+					time.Sleep(time.Millisecond * 13)
 					raceCourse.data = append(raceCourse.data[1:], float64(raceCourse.positionX))	
 				}else {
 					raceCourse.data = append(raceCourse.data, float64(raceCourse.positionX))
 				}
 			}else {
-				time.Sleep(time.Millisecond * 12)
+				time.Sleep(time.Millisecond * 13)
 				raceCourse.data = append(raceCourse.data[1:], float64(raceCourse.positionX))	
 			}
 			
@@ -190,10 +190,10 @@ func keyEvent() {
 		}else if !isGameOver{
 			time.Sleep(time.Millisecond * 10)
 			if ebiten.IsKeyPressed(ebiten.KeyLeft) {
-				racePlayer.positionX -= 0.45
+				racePlayer.positionX -= 0.4
 			}
 			if ebiten.IsKeyPressed(ebiten.KeyRight) {
-				racePlayer.positionX += 0.45
+				racePlayer.positionX += 0.4
 			}
 		}
 		
