@@ -145,6 +145,8 @@ func collision() {
 }
 
 func update(screen *ebiten.Image) error {
+	jsEvent()
+	
 	screen.Fill(colornames.Darkgreen)
 	
 	raceCourse.draw(screen)
@@ -204,7 +206,7 @@ func main() {
 	go createCourse()	
 	go keyEvent()
 	
-	if err := ebiten.Run(update, screenWidth, screenHeight, 2, "セブン レース"); err != nil {
+	if err := ebiten.Run(update, screenWidth, screenHeight, 3, "セブン レース"); err != nil {
 		log.Fatal(err)
 	}
 }
