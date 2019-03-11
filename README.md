@@ -1,1 +1,1 @@
-https://jsgo.io/ku20298/sevenrace
+https://ku20298.github.io/sevenrace/
