@@ -1,18 +1,24 @@
+
 <!DOCTYPE html>
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
-    <style>
-        body {
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-            margin: auto;
-            background-color: white; 
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.json">
+<title>セブン レース</title>
 </head>
 <body>
+
+<script src="main.js"></script>
+<script>
+// ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('sw.js').then(function(registration) {
+		console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	}).catch(function(err) {
+		console.log('ServiceWorker registration failed: ', err);
+	});
+}
+</script>
 </body>
-<script type="text/javascript" src="main.js"></script>
+</html>
